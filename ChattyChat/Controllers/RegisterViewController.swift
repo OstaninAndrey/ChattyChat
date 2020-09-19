@@ -17,6 +17,9 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        emailTextfield.attributedPlaceholder = NSAttributedString(string: emailTextfield.placeholder!, attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        passwordTextfield.attributedPlaceholder = NSAttributedString(string: passwordTextfield.placeholder!, attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        
         navigationController?.navigationBar.tintColor = .systemYellow
     }
     
